@@ -22,3 +22,14 @@ Route::get('/vehicle/{id}', 'VehicleController@show');
 Route::get('/vehicle/{id}/edit', 'VehicleController@edit');
 Route::put('/vehicle/{id}', 'VehicleController@update');
 Route::delete('/vehicle/{id}', 'VehicleController@destroy');
+
+Route::get('/calendar', 'CalendarController@index');
+Route::get('/calendar/create', 'CalendarController@create');
+Route::post('/calendar', 'CalendarController@store');
+Route::get('/calendar/{id}', 'CalendarController@show');
+Route::get('/calendar/{id}/edit', 'CalendarController@edit');
+Route::put('/calendar/{id}', 'CalendarController@update');
+Route::delete('/calendar/{id}', 'CalendarController@destroy');
+
+Route::resource('post', 'PostController');
+Route::resource('newcalendar', 'NewcalendarController');

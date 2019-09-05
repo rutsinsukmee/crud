@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "appointment",
+            "type": "string"
+        },
+        {
+            "name": "location",
+            "type": "text"
+        },
+        {
+            "name": "time",
+            "type": "integer"
+        }
+    ]
+}
