@@ -33,3 +33,20 @@ Route::delete('/calendar/{id}', 'CalendarController@destroy');
 
 Route::resource('post', 'PostController');
 Route::resource('newcalendar', 'NewcalendarController');
+
+Route::middleware(['auth','role:admin'])->group(function () {
+    Route::get("/teacher" , function (){
+	    return view("teacher/index");
+    });
+});
+
+Route::get("/student" , function (){
+	return view("student/index");
+})->middleware('auth','role:admin');
+
+Route::get('/table', function () {
+    return view('table');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
