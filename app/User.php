@@ -41,4 +41,8 @@ class User extends Authenticatable
         return $this->hasOne('App\Profile', 'user_id'); 
     }
 
+    public function vehicles(){
+        return $this->hasMany('App\Vehicle', 'user_id');
+    } 
+
 }

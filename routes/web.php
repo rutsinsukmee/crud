@@ -50,3 +50,14 @@ Route::get('/table', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('test-storage', function(){
+    return view('test-storage');
+});
+
+Route::get('/example/create', 'ExampleController@create');
+Route::post('/example', 'ExampleController@store');
+
+Route::get('/example/pdf', 'ExampleController@pdf_index');
+
+Route::resource('book', 'BookController');
