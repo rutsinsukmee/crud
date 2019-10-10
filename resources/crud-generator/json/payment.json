@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "total",
+            "type": "float"
+        },
+        {
+            "name": "order_id",
+            "type": "integer"
+        },
+        {
+            "name": "slip",
+            "type": "file"
+        }
+    ]
+}

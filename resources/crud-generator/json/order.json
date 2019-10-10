@@ -1,0 +1,16 @@
+{
+    "fields": [
+        {
+            "name": "user_id",
+            "type": "integer"
+        },
+        {
+            "name": "remark",
+            "type": "text"
+        },
+        {
+            "name": "total",
+            "type": "float"
+        }
+    ]
+}

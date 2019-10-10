@@ -1,0 +1,28 @@
+{
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "sell_price",
+            "type": "float"
+        },
+        {
+            "name": "purchase_price",
+            "type": "float"
+        },
+        {
+            "name": "photo",
+            "type": "file"
+        },
+        {
+            "name": "category_id",
+            "type": "integer"
+        }
+    ]
+}

@@ -60,4 +60,12 @@ Route::post('/example', 'ExampleController@store');
 
 Route::get('/example/pdf', 'ExampleController@pdf_index');
 
+
+Route::middleware(['auth'])->group(function () {
 Route::resource('book', 'BookController');
+Route::resource('order', 'OrderController');
+Route::resource('payment', 'PaymentController');
+Route::resource('order-product', 'OrderProductController');
+Route::resource('product', 'ProductController');
+Route::resource('category', 'CategoryController');
+});
